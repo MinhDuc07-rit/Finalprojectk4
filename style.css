@@ -25,6 +25,8 @@ p {
     font-family: Arial, sans-serif;
     text-align: center;
 }
+
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -32,8 +34,9 @@ main {
     padding: 10px;
 }
 
+main > h2,
 main > p {
-    grid-column: 1;
+    grid-column: 1 / -1;
 }
 
 div {
@@ -58,6 +61,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 @media screen and (min-width: 772px) {
 
     main {
